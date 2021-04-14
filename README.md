@@ -50,9 +50,9 @@ In order to easily implement the different technologies, this repository shares 
 
 1. You need to have Docker installed and running on a machine with enough capacity for the dataset to be used.
    
-2. To implement the different technologies it is only necessary to execute the scripts for the intended technology inside the installation folder.
+2. To implement the different technologies it is only necessary to execute the scripts for the intended technology inside the installation folder. For example:
     ```
-      For example: sh docker-deploy-hdp.sh
+      sh docker-deploy-hdp.sh
     ```
 
 ### Load Dataset
