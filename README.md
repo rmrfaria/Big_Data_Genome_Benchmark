@@ -14,8 +14,8 @@
       <a href="#Getting Started">Getting Started</a>
       <ul>
         <li><a href="#Installation">Installation</a></li>
-        <li><a href="#Load">Load</a></li>
-        <li><a href="#Execution">Execution</a></li>
+        <li><a href="#load-dataset">Load</a></li>
+        <li><a href="#Execution-of-the-different-queries">Execution</a></li>
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
