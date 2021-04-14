@@ -33,39 +33,35 @@ This repository contains a set of scripts that allow the automatic creation of d
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Docker](https://www.docker.com/)
+* [Apache Hive](https://hive.apache.org/)
+* [Presto](https://prestodb.io/)
+* [Redis](https://redis.io/)
+* [MongoDB](https://www.mongodb.com/2)
+* [VoltDB](https://www.voltdb.com/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+To get a local copy up and running of this benchmark it is necessary to follow these simple steps.
 
 ### Installation
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
+In order to easily implement the different technologies, this repository shares shell scripts that automate this process.
 
+1. You need to have Docker installed and running on a machine with enough capacity for the dataset to be used.
+   
+2. To implement the different technologies it is only necessary to execute the scripts for the intended technology inside the installation folder.
+    ```
+      For example: sh docker-deploy-hdp.sh
+    ```
 
+### Load Dataset
 
-<!-- USAGE EXAMPLES -->
-## Usage
+To create the necessary tables and load the data you must run the scripts that are inside the folder, create tables and load the data
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Note: Relatively to MongoDB, Redis and VoltDB it is not necessary to define the tables in advance.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### Execution of the different queries 
+
+For the execution of the proposed set of queries, the scripts found in the queries folder must be executed. These create two external files where the total execution time and the execution time per query are stored.
