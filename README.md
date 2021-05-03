@@ -49,7 +49,54 @@ In order to easily implement the different technologies, this repository shares 
 2. To implement the different technologies it is only necessary to execute the scripts for the intended technology inside the installation folder. For example:
     ```
       sh docker-deploy-hdp.sh
+      
     ```
+### Aditional Configuration
+
+By default, the Presto configuration that results from this image presents a single node with the Coordinator and the Worker together, which is not adequate when you want to maximize performance. To do this, changes were made to the etc/config.properties file of each node. This config properties file contains the configuration for the Presto server.
+
+The following is the configuration used for the Coordinator:
+  ```
+    coordinator=true
+    node-scheduler.include-coordinator=false
+    http-server.http.port=8080
+    query.max-memory=10GB
+    query.max-memory-per-node=1GB
+    query.max-total-memory-per-node=2GB
+    discovery-server.enabled=true
+    discovery.uri=http://<ip>:<port>
+  ```
+The following is the configuration used for the Workers:
+  ```
+    coordinator=false
+    http-server.http.port=8080
+    query.max-memory=10GB
+    query.max-memory-per-node=1GB
+    query.max-total-memory-per-node=2GB
+    discovery.uri=http://<ip>:<port>
+  ```
+  
+In order to have access to the data sources and to be able to consult their data, Presto makes use of connectors. These are found in the folder /opt/presto-server/etc/catalog and for each technology a connector/file is created, which contains various properties according to the resources that each data source provides. For these technologies were createad the following connectors:
+
+hive.properties
+  ```
+    connector.name=hive-hadoop2
+    hive.metastore.uri=thrift://<ip>:<port>
+  ```
+mongodb.properties
+  ```
+    connector.name=mongodb
+    mongodb.seeds=<ip>:<port>
+  ```
+redis.properties
+  ```
+    connector.name=redis
+    redis.table-names=variation,variation_phenotype,variation_databank,databank,gene,statistical_evidence,date_object
+    redis.default-schema=genome
+    redis.nodes=<ip>:<port>
+    redis.key-prefix-schema-table=true
+  ```
+Additionally it was still necessary to create the etc/redis directory and within it JSON files were created for each table in the dataset. These can be consulted in the configuration folder.
 
 ### Load Dataset
 
