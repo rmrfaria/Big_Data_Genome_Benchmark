@@ -49,8 +49,8 @@ In order to easily implement the different technologies, this repository shares 
 2. To implement the different technologies it is only necessary to execute the scripts for the intended technology inside the installation folder. For example:
     ```
       sh docker-deploy-hdp.sh
-      
     ```
+    
 __Aditional Configuration__
 
 By default, the Presto configuration that results from this image presents a single node with the Coordinator and the Worker together, which is not adequate when you want to maximize performance. To do this, changes were made to the etc/config.properties file of each node. This config properties file contains the configuration for the Presto server.
@@ -96,7 +96,7 @@ In order to have access to the data sources and to be able to consult their data
     redis.nodes=<ip>:<port>
     redis.key-prefix-schema-table=true
   ```
-Additionally it was still necessary to create the etc/redis directory and within it JSON files were created for each table in the dataset. These can be consulted in the configuration folder.
+Additionally it was still necessary to create the etc/redis directory under the /opt/presto-server/etc/redis folder of the existing Presto node as coordinator and within it JSON files were created for each table in the dataset. These can be consulted in the configuration folder.
 
 ### Load Dataset
 
