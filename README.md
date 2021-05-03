@@ -51,7 +51,7 @@ In order to easily implement the different technologies, this repository shares 
       sh docker-deploy-hdp.sh
       
     ```
-** Aditional Configuration **
+__Aditional Configuration__
 
 By default, the Presto configuration that results from this image presents a single node with the Coordinator and the Worker together, which is not adequate when you want to maximize performance. To do this, changes were made to the etc/config.properties file of each node. This config properties file contains the configuration for the Presto server.
 
