@@ -51,11 +51,11 @@ In order to easily implement the different technologies, this repository shares 
       sh docker-deploy-hdp.sh
       
     ```
-### Aditional Configuration
+** Aditional Configuration **
 
 By default, the Presto configuration that results from this image presents a single node with the Coordinator and the Worker together, which is not adequate when you want to maximize performance. To do this, changes were made to the etc/config.properties file of each node. This config properties file contains the configuration for the Presto server.
 
-The following is the configuration used for the Coordinator:
+The following is the configuration used for the *Coordinator*:
   ```
     coordinator=true
     node-scheduler.include-coordinator=false
@@ -66,7 +66,7 @@ The following is the configuration used for the Coordinator:
     discovery-server.enabled=true
     discovery.uri=http://<ip>:<port>
   ```
-The following is the configuration used for the Workers:
+The following is the configuration used for the *Workers*:
   ```
     coordinator=false
     http-server.http.port=8080
@@ -78,17 +78,17 @@ The following is the configuration used for the Workers:
   
 In order to have access to the data sources and to be able to consult their data, Presto makes use of connectors. These are found in the folder /opt/presto-server/etc/catalog and for each technology a connector/file is created, which contains various properties according to the resources that each data source provides. For these technologies were createad the following connectors:
 
-hive.properties
+*hive.properties*
   ```
     connector.name=hive-hadoop2
     hive.metastore.uri=thrift://<ip>:<port>
   ```
-mongodb.properties
+*mongodb.properties*
   ```
     connector.name=mongodb
     mongodb.seeds=<ip>:<port>
   ```
-redis.properties
+*redis.properties*
   ```
     connector.name=redis
     redis.table-names=variation,variation_phenotype,variation_databank,databank,gene,statistical_evidence,date_object
