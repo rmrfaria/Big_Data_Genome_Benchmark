@@ -1,0 +1,94 @@
+{
+    "tableName": "variation",
+    "schemaName": "genome",
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "redis_key",
+                "type": "varchar",
+                "hidden": "false"
+            }
+        ]
+    },
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "variation_id",
+                "type": "varchar",
+                "mapping": "variation_id"
+            },
+            {
+                "name": "date_assembly",
+                "type": "varchar",
+                "mapping": "date_assembly"
+            },
+            {
+                "name": "chromosome",
+                "type": "varchar",
+                "mapping": "chromosome"
+            },
+            {
+                "name": "clinical_importance",
+                "type": "varchar",
+                "mapping": "clinical_importance"
+            },
+            {
+                "name": "alt",
+                "type": "varchar",
+                "mapping": "alt"
+            },
+            {
+                "name": "ref",
+                "type": "varchar",
+                "mapping": "ref"
+            },
+            {
+                "name": "start_variation",
+                "type": "int",
+                "mapping": "start_variation"
+            },
+            {
+                "name": "end_variation",
+                "type": "int",
+                "mapping": "end_variation"
+            },
+            {
+                "name": "specialization_type",
+                "type": "varchar",
+                "mapping": "specialization_type"
+            },
+            {
+                "name": "other_identifiers",
+                "type": "varchar",
+                "mapping": "other_identifiers"
+            },
+            {
+                "name": "number_of_nucleotides",
+                "type": "int",
+                "mapping": "number_of_nucleotides"
+            },
+            {
+                "name": "assembly",
+                "type": "varchar",
+                "mapping": "assembly"
+            },
+            {
+                "name": "nc_identifier",
+                "type": "varchar",
+                "mapping": "nc_identifier"
+            },
+            {
+                "name": "hg_identifier",
+                "type": "varchar",
+                "mapping": "hg_identifier"
+            },
+            {
+                "name": "date_id",
+                "type": "varchar",
+                "mapping": "date_id"
+            }
+        ]
+    }
+}
