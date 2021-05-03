@@ -1,0 +1,29 @@
+{
+    "tableName": "variation_databank",
+    "schemaName": "genome",
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "redis_key",
+                "type": "varchar",
+                "hidden": "false"
+            }
+        ]
+    },
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "variation_id",
+                "type": "varchar",
+                "mapping": "variation_id"
+            },
+            {
+                "name": "databank_id",
+                "type": "int",
+                "mapping": "databank_id"
+            }
+        ]
+    }
+}

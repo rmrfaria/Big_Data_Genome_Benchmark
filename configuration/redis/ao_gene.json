@@ -1,0 +1,89 @@
+{
+    "tableName": "gene",
+    "schemaName": "genome",
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "redis_key",
+                "type": "varchar",
+                "hidden": "false"
+            }
+        ]
+    },
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "date_assembly",
+                "type": "varchar",
+                "mapping": "date_assembly"
+            },
+            {
+                "name": "nc_identifier",
+                "type": "varchar",
+                "mapping": "nc_identifier"
+            },
+            {
+                "name": "databank_id",
+                "type": "int",
+                "mapping": "databank_id"
+            },
+            {
+                "name": "ng_identifier",
+                "type": "varchar",
+                "mapping": "ng_identifier"
+            },
+            {
+                "name": "symbol",
+                "type": "varchar",
+                "mapping": "symbol"
+            },
+            {
+                "name": "official_name",
+                "type": "varchar",
+                "mapping": "official_name"
+            },
+            {
+                "name": "synonims",
+                "type": "varchar",
+                "mapping": "synonims"
+            },
+            {
+                "name": "start_gene",
+                "type": "int",
+                "mapping": "start_gene"
+            },
+            {
+                "name": "end_gene",
+                "type": "int",
+                "mapping": "end_gene"
+            },
+            {
+                "name": "databank_version_id",
+                "type": "varchar",
+                "mapping": "databank_version_id"
+            },
+            {
+                "name": "assembly",
+                "type": "varchar",
+                "mapping": "assembly"
+            },
+            {
+                "name": "name",
+                "type": "varchar",
+                "mapping": "name"
+            },
+            {
+                "name": "hg_identifier",
+                "type": "varchar",
+                "mapping": "hg_identifier"
+            },
+            {
+                "name": "date_id",
+                "type": "varchar",
+                "mapping": "date_id"
+            }
+        ]
+    }
+}

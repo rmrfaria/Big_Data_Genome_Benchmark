@@ -1,0 +1,69 @@
+{
+    "tableName": "statistical_evidence",
+    "schemaName": "genome",
+    "key": {
+        "dataFormat": "raw",
+        "fields": [
+            {
+                "name": "redis_key",
+                "type": "varchar",
+                "hidden": "false"
+            }
+        ]
+    },
+    "value": {
+        "dataFormat": "hash",
+        "fields": [
+            {
+                "name": "date_bibliography",
+                "type": "varchar",
+                "mapping": "date_bibliography"
+            },
+            {
+                "name": "bibliography_id",
+                "type": "int",
+                "mapping": "bibliography_id"
+            },
+            {
+                "name": "variation_id",
+                "type": "varchar",
+                "mapping": "variation_id"
+            },
+            {
+                "name": "origin",
+                "type": "varchar",
+                "mapping": "origin"
+            },
+            {
+                "name": "phenotype",
+                "type": "varchar",
+                "mapping": "phenotype"
+            },
+            {
+                "name": "replicated",
+                "type": "varchar",
+                "mapping": "replicated"
+            },
+            {
+                "name": "title",
+                "type": "varchar",
+                "mapping": "title"
+            },
+            {
+                "name": "publication",
+                "type": "varchar",
+                "mapping": "publication"
+            },
+            {
+                "name": "databank_id",
+                "type": "int",
+                "mapping": "databank_id"
+            },
+            {
+                "name": "date_id",
+                "type": "varchar",
+                "mapping": "date_id"
+            }
+        ]
+    }
+}
