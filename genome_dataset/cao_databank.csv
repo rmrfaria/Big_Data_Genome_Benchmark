@@ -1,0 +1,15 @@
+﻿row_number;datee;release;databank_id;name;url;databank_version_id;date_id
+1;2019-11-30T15:07:00.000Z;Build191129-2212m.3;4;PubMed;https://www.ncbi.nlm.nih.gov/pubmed;4_Build191129-2212m.3;326000000000
+2;2019-12-04T03:28:00.000Z;Build191203-2212m.1;4;PubMed;https://www.ncbi.nlm.nih.gov/pubmed;4_Build191203-2212m.1;928000000000
+3;2019-07-03T13:00:00.000Z;2020;5;GWAS Catalog;https://www.ebi.ac.uk/gwas/;5_810;1600000000000
+4;2020;2020;3;Ensembl;https://www.ensembl.org/index.html;3_336;2020
+5;2020;2020;5;GWAS Catalog;https://www.ebi.ac.uk/gwas/;5_581;2020
+6;2020;98;3;Ensembl;https://www.ensembl.org/index.html;3_98;2020
+7;2019-12-10T07:09:00.000Z;Build191209-2212m.2;4;PubMed;https://www.ncbi.nlm.nih.gov/pubmed;4_Build191209-2212m.2;155000000000
+8;2019-11-26T00:36:00.000Z;Build191125-1810.2;2;ClinVar;https://www.ncbi.nlm.nih.gov/clinvar;2_Build191125-1810.2;653000000000
+9;2019-12-10T08:16:00.000Z;Build191210-0005m.1;1;NCBI Gene;https://www.ncbi.nlm.nih.gov/gene;1_Build191210-0005m.1;137000000000
+10;2019-12-10T07:19:00.000Z;Build191210-0555.1;6;Assembly;https://www.ncbi.nlm.nih.gov/assembly;6_Build191210-0555.1;301000000000
+11;2019-12-02T05:38:00.000Z;Build191202-0425.1;6;Assembly;https://www.ncbi.nlm.nih.gov/assembly;6_Build191202-0425.1;799000000000
+12;2019-12-02T15:31:00.000Z;Build191201-2212m.3;4;PubMed;https://www.ncbi.nlm.nih.gov/pubmed;4_Build191201-2212m.3;25769803777
+13;2019-12-10T07:25:00.000Z;Build191210-0647.1;2;ClinVar;https://www.ncbi.nlm.nih.gov/clinvar;2_Build191210-0647.1;713000000000
+14;2019-11-28T08:50:00.000Z;Build191127-2240m.1;1;NCBI Gene;https://www.ncbi.nlm.nih.gov/gene;1_Build191127-2240m.1;309000000000
