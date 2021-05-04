@@ -46,7 +46,7 @@ In order to easily implement the different technologies, this repository shares 
 
 1. You need to have Docker installed and running on a machine with enough capacity for the dataset to be used.
    
-2. To implement the different technologies it is only necessary to execute the scripts for the intended technology inside the installation folder. For example:
+2. To implement the different technologies it is only necessary to execute the scripts for the intended technology inside the "installation" folder. For example:
     ```
       sh docker-deploy-hdp.sh
     ```
@@ -96,9 +96,11 @@ In order to have access to the data sources and to be able to consult their data
     redis.nodes=<ip>:<port>
     redis.key-prefix-schema-table=true
   ```
-Additionally it was still necessary to create the etc/redis directory under the /opt/presto-server/etc/redis folder of the existing Presto node as coordinator and within it JSON files were created for each table in the dataset. These can be consulted in the configuration folder.
+Additionally it was still necessary to create the etc/redis directory under the /opt/presto-server/etc/redis folder of the existing Presto node as coordinator and within it JSON files were created for each table in the dataset. These can be consulted in the "configuration" folder.
 
 ### Load Dataset
+
+The choice for this application domain, namely the human genome, is motivated by the complexity of the associated data and the relationships they establish among themselves. The data available in the "genome_dataset" folder are about genetic mutations that affect the heart, that is, heart diseases. These data are public, they are integrated from public databases with genome data.
 
 To create the necessary tables and load the data you must run the scripts that are inside the folder, create tables and load the data
 
@@ -106,4 +108,4 @@ Note: Relatively to MongoDB, Redis and VoltDB it is not necessary to define the 
 
 ### Execution of the different queries 
 
-For the execution of the proposed set of queries, the scripts found in the queries folder must be executed. These create two external files where the total execution time and the execution time per query are stored.
+For the execution of the proposed set of queries, the scripts found in the "queries" folder must be executed. These create two external files where the total execution time and the execution time per query are stored.
