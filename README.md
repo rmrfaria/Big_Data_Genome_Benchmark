@@ -108,4 +108,6 @@ Note: Relatively to MongoDB, Redis and VoltDB it is not necessary to define the 
 
 ### Execution of the different queries 
 
+The set of proposed queries aims at answering typical questions in the genome domain and, for such, they were defined and validated by an expert in the field. These were developed based on the SSB queries, replicating whenever possible its patterns, namely, the number of tables used, the type of operations performed on the data, such as the aggregation function, the number of conditions used, among others. It should be noted that they contain minor differences due to the data context and the data model used.
+
 For the execution of the proposed set of queries, the scripts found in the "queries" folder must be executed. These create two external files where the total execution time and the execution time per query are stored.
